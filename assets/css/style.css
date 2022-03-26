@@ -1,0 +1,88 @@
+body {
+    margin: 0px;
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: baseline;
+    margin: 20px 50px;
+}
+
+nav .rightMenu {
+    display: flex;
+    margin-left: auto;
+}
+
+nav .navbar-toggle {
+    display: none;
+}
+
+nav .btn {
+    background: #676060;
+    border-radius: 25px;
+    font-weight: 590;
+    font-size: 18px;
+    line-height: 100%;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    color: #CEBFBF;
+}
+
+@media screen and (max-width: 800px) {
+    nav{
+        flex-direction: column;
+    }
+    
+    nav .rightMenu {
+        display: none;
+        margin-left: 0;
+        flex-direction: column;
+    }
+    
+    nav .navbar-toggle {
+        display: flex;
+        align-self: flex-end;
+        position: absolute;
+        cursor: pointer;
+    }
+    
+    nav .showRightMenu {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    nav .rightMenu a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+nav .logo {
+}
+
+nav a {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    color: rgba(206, 191, 191, 0.5);
+    padding-right: 20px;
+    padding: 10px;
+    margin-left: 18px;
+}
+
+nav a:hover {
+    color: rgba(206, 191, 191, 0.5);
+}
+
+video {
+    width: 100%;
+}
