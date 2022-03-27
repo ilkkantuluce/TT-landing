@@ -90,7 +90,7 @@ nav .navbar-toggle {
     align-items: center;
     color: #CEBFBF;
     width: fit-content;
-    padding: 10px;
+    padding: 10px 25px;
 }
 
 .learn-more {
@@ -105,7 +105,8 @@ nav .navbar-toggle {
 .flex-buttons {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 37px;
+    margin-top: 25px;
 }
 
 .circle-wrap {
@@ -344,14 +345,14 @@ section {
 }
 
 .chart {
-    margin-top: 20px;
+    margin-top: 38px;
 }
 
 .card-wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 52px;
 }
 
 .card-wrap .card {
@@ -362,11 +363,11 @@ section {
     align-items: center;
     justify-content: space-between;
     gap: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
 }
 
 .card-wrap .card>div {
-    padding: 30px;
+    padding: 23px 39px;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -384,7 +385,7 @@ footer .footer-top {
 
 footer .footer-top a {
     font-weight: 860;
-    font-size: 11px;
+    font-size: 12px;
     color: #CEBFBF;
     margin-right: 20px;
     display: flex;
@@ -407,11 +408,20 @@ footer .footer-bottom {
 
 footer .footer-bottom p {
     font-weight: 860;
-    font-size: 9px;
+    font-size: 10px;
     color: #CEBFBF;
 }
 
 @media screen and (max-width: 800px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
     nav .navbar-container {
         flex-direction: column;
     }
@@ -427,20 +437,26 @@ footer .footer-bottom p {
     }
     
     nav .navbar-toggle {
+        padding: 0px;
         display: flex;
         align-self: flex-end;
         position: absolute;
         cursor: pointer;
     }
+
+    nav a {
+        padding-left: 0px;
+    }
     
     nav .showRightMenu {
         display: flex;
-        margin-top: 10px;
+        margin-top: 25px;
     }
 
     nav .rightMenu a {
         padding-top: 10px;
         padding-bottom: 10px;
+        margin-bottom: 10px;
     }
 
     .container-fluid {
@@ -460,8 +476,20 @@ footer .footer-bottom p {
         flex-direction: column;
     }
 
+    .section-1 {
+        margin-top: 77px;
+    }
+
     .section-3 .col-right {
         margin-left: 0px;
+    }
+
+    .portfolio-image {
+        margin-bottom: 25px;
+    }
+    
+    .circle-wrap {
+        margin-top: 20px;
     }
     
     .card-wrap {
