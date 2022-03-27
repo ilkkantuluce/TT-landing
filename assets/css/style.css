@@ -31,10 +31,16 @@ a {
 
 .row .col-left {
     height: fit-content;
+    width: 50%;
 }
 
 .row .col-right {
     height: fit-content;
+    width: 50%;
+}
+
+.section-2 .row {
+    justify-content: space-between;
 }
 
 .section-2 .col-left {
@@ -55,12 +61,13 @@ nav {
     width: 100%;
     background-color: black;
     top: 0px;
+    z-index: 1000;
 }
 
 nav .navbar-container {
     display: flex;
     align-items: baseline;
-    padding: 35px 30px;
+    padding: 30px;
 }
 
 nav .rightMenu {
@@ -101,6 +108,157 @@ nav .navbar-toggle {
     gap: 15px;
 }
 
+.circle-wrap {
+    position: relative;
+    max-width: 567px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #151A20;
+  stroke-width: 1.4;
+}
+
+.circle-wrap .circle {
+    
+}
+
+.circle-wrap.animate .circle {
+  animation: progress 2s ease-out forwards;
+}
+
+.circle-1 svg {
+    transform: rotate(93deg);
+}
+
+.circle-1 .circle {
+  stroke: #F72585;
+  fill: none;
+  stroke-width: 1.3;
+  stroke-linecap: round;
+}
+
+.circle-1 .circle-bg {
+    stroke-width: 1.3;
+}
+
+.circle-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100000;
+    width: 85%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.circle-2 svg {
+    transform: rotate(92deg);
+}
+
+.circle-2 .circle {
+    stroke: #5ED500;
+    fill: none;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+}
+
+.circle-2 .circle-bg {
+    stroke-width: 1.5;
+}
+
+.circle-3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100000;
+    width: 70%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.circle-3 svg {
+    transform: rotate(91deg);
+}
+
+.circle-3 .circle {
+    stroke: #6493F1;
+    fill: none;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+}
+
+.circle-3 .circle-bg {
+    stroke-width: 1.8;
+}
+
+.circle-4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100000;
+    width: 55%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.circle-4 svg {
+    transform: rotate(120deg);
+}
+
+.circle-4 .circle {
+    stroke: #FFD600;
+    fill: none;
+    stroke-width: 2.3;
+    stroke-linecap: round;
+}
+
+.circle-4 .circle-bg {
+    stroke-width: 2.3;
+}
+
+.circle-5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100000;
+    width: 40%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.circle-5 svg {
+    transform: rotate(90deg);
+}
+
+.circle-5 .circle {
+    stroke: #57A146;
+    fill: none;
+    stroke-width: 3;
+    stroke-linecap: round;
+}
+
+.circle-5 .circle-bg {
+    stroke-width: 3;
+}
+
+.circular-chart {
+    max-width: 100%;
+    max-height: 567px;
+}
+
+
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
 
 
 nav .logo {
@@ -109,16 +267,12 @@ nav .logo {
 
 nav a {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 17px !important;
     line-height: 100%;
     color: rgba(206, 191, 191, 0.5);
     padding-right: 20px;
     padding: 10px;
     margin-left: 18px;
-}
-
-nav a:hover {
-    color: rgba(206, 191, 191, 0.5);
 }
 
 video {
@@ -170,7 +324,23 @@ section {
 }
 
 .section-2 {
-    margin: 100px 0px;
+    margin-top: 229px;
+    margin-bottom: 342px;
+}
+
+.section-3 {
+    margin-bottom: 382px;
+    margin-top: 342px;
+}
+
+.section-4 {
+    margin-top: 382px;
+    margin-bottom: 237px;
+}
+
+.section-5 {
+    margin-bottom: 243px;
+    margin-top: 237px;
 }
 
 .chart {
@@ -276,6 +446,14 @@ footer .footer-bottom p {
     .container-fluid {
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .row .col-left {
+        width: 100%;
+    }
+    
+    .row .col-right {
+        width: 100%;
     }
 
     .row {

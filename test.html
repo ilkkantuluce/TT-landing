@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .skill {
+            width: 160px;
+            height: 160px;
+            position: relative;
+        }
+        .outer {
+            height: 160px;
+            width: 160px;
+            border-radius: 50%;
+            border: 1px solid red;
+            display: flex;
+    justify-content: center;
+    align-items: center;
+            box-shadow: 6px 6px 10px -1px rgb(red, green, blue, 0.15),
+            -0.5px -0.5px 0px rgb(255, 225, 225, 0.7);
+        }
+
+        .inner {
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            border: 1px solid red;
+            box-shadow: 6px 6px 10px -1px rgb(red, green, blue, 0.15),
+            -0.5px -0.5px 0px rgb(255, 225, 225, 0.7);        }
+
+            circle {
+                fill: none;
+                stroke: red;
+                width: 567px;
+                stroke-width: 11px;
+                stroke-dasharray: 1419;
+                stroke-dashoffset: 1419;
+                animation: anim 2s linear forwards;
+            }
+
+            svg {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+
+            @keyframes anim {
+                100% {
+                    stroke-dashoffset: 419;
+                }
+            }
+    </style>
+
+
+<div class="skill">
+    <div class="outer">
+        <div class="inner">
+
+        </div>
+    </div>
+
+    <svg version="1.1" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+        <circle cx="250" cy="250" r="200" />
+    </svg>
+
+</div>
+
+</body>
+</html>
