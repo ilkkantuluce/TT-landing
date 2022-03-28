@@ -11,7 +11,7 @@ a {
 }
 
 .container {
-    max-width: 1101px;
+    max-width: 1150px;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -112,6 +112,7 @@ nav .navbar-toggle {
 .circle-wrap {
     position: relative;
     max-width: 567px;
+    overflow: hidden;
 }
 
 .circle-bg {
@@ -306,7 +307,7 @@ h1 span {
 p {
     font-weight: 400;
     font-size: 20px;
-    line-height: 25px;
+    line-height: 23px;
     color: #CEBFBF;
 }
 
@@ -413,7 +414,7 @@ footer .footer-bottom p {
 }
 
 @media screen and (max-width: 800px) {
-    body {
+    html {
         overflow-x: hidden;
     }
 
@@ -498,6 +499,10 @@ footer .footer-bottom p {
 
     .card-wrap .card {
         width: 100%;
+    }
+
+    .section-5 br {
+        display: none;
     }
 
     footer .footer-top a {
