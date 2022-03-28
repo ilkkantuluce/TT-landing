@@ -1,8 +1,25 @@
+@font-face {
+    font-family: 'SF-Pro-Text';
+    src: url('../font/SF Pro Text/SF-Pro-Text-Regular.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'SF-Pro-Text';
+    font-weight: 600;
+    src: url('../font/SF Pro Text/SF-Pro-Text-Semibold.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'SF-Pro-Text';
+    font-weight: 700;
+    src: url('../font/SF Pro Text/SF-Pro-Text-Bold.otf') format("opentype");
+}
+
 body {
     margin: 0px;
     background-color: black;
     color: white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "SF-Pro-Text";
 }
 
 a {
@@ -82,15 +99,15 @@ nav .navbar-toggle {
 .btn {
     background: #676060;
     border-radius: 25px;
+    font-style: normal;
     font-weight: 590;
     font-size: 18px;
-    line-height: 100%;
     display: flex;
-    gap: 6px;
+    gap: 13px;
     align-items: center;
     color: #CEBFBF;
     width: fit-content;
-    padding: 10px 25px;
+    padding: 12px 26px;
 }
 
 .learn-more {
@@ -136,12 +153,12 @@ nav .navbar-toggle {
 .circle-1 .circle {
   stroke: #F72585;
   fill: none;
-  stroke-width: 1.3;
+  stroke-width: 1.1;
   stroke-linecap: round;
 }
 
 .circle-1 .circle-bg {
-    stroke-width: 1.3;
+    stroke-width: 1.1;
 }
 
 .circle-2 {
@@ -149,7 +166,7 @@ nav .navbar-toggle {
     top: 50%;
     left: 50%;
     z-index: 100000;
-    width: 85%;
+    width: 87%;
     height: 100%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -162,12 +179,12 @@ nav .navbar-toggle {
 .circle-2 .circle {
     stroke: #5ED500;
     fill: none;
-    stroke-width: 1.5;
+    stroke-width: 1.3;
     stroke-linecap: round;
 }
 
 .circle-2 .circle-bg {
-    stroke-width: 1.5;
+    stroke-width: 1.3;
 }
 
 .circle-3 {
@@ -175,7 +192,7 @@ nav .navbar-toggle {
     top: 50%;
     left: 50%;
     z-index: 100000;
-    width: 70%;
+    width: 73%;
     height: 100%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -188,12 +205,12 @@ nav .navbar-toggle {
 .circle-3 .circle {
     stroke: #6493F1;
     fill: none;
-    stroke-width: 1.8;
+    stroke-width: 1.5;
     stroke-linecap: round;
 }
 
 .circle-3 .circle-bg {
-    stroke-width: 1.8;
+    stroke-width: 1.5;
 }
 
 .circle-4 {
@@ -201,7 +218,7 @@ nav .navbar-toggle {
     top: 50%;
     left: 50%;
     z-index: 100000;
-    width: 55%;
+    width: 59%;
     height: 100%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -214,12 +231,12 @@ nav .navbar-toggle {
 .circle-4 .circle {
     stroke: #FFD600;
     fill: none;
-    stroke-width: 2.3;
+    stroke-width: 1.9;
     stroke-linecap: round;
 }
 
 .circle-4 .circle-bg {
-    stroke-width: 2.3;
+    stroke-width: 1.9;
 }
 
 .circle-5 {
@@ -227,7 +244,7 @@ nav .navbar-toggle {
     top: 50%;
     left: 50%;
     z-index: 100000;
-    width: 40%;
+    width: 46%;
     height: 100%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -240,12 +257,12 @@ nav .navbar-toggle {
 .circle-5 .circle {
     stroke: #57A146;
     fill: none;
-    stroke-width: 3;
+    stroke-width: 2.4;
     stroke-linecap: round;
 }
 
 .circle-5 .circle-bg {
-    stroke-width: 3;
+    stroke-width: 2.4;
 }
 
 .circular-chart {
@@ -265,11 +282,14 @@ nav .navbar-toggle {
 
 nav .logo {
     margin-left: 0px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    color: rgba(206, 191, 191, 0.5);
 }
 
 nav a {
-    font-weight: 700;
-    font-size: 17px !important;
+    font-size: 15px;
     line-height: 100%;
     color: rgba(206, 191, 191, 0.5);
     padding-right: 20px;
@@ -286,9 +306,9 @@ img {
 }
 
 h1 {
+    font-style: normal;
     font-weight: 860;
     font-size: 64px;
-    line-height: 68px;
     color: #CEBFBF;
     margin-top: 0px;
     margin-bottom: 50px;
@@ -386,7 +406,7 @@ footer .footer-top {
 
 footer .footer-top a {
     font-weight: 860;
-    font-size: 12px;
+    font-size: 11px;
     color: #CEBFBF;
     margin-right: 20px;
     display: flex;
@@ -404,12 +424,12 @@ footer .footer-right {
 }
 
 footer .footer-bottom {
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 footer .footer-bottom p {
     font-weight: 860;
-    font-size: 10px;
+    font-size: 9px;
     color: #CEBFBF;
 }
 
