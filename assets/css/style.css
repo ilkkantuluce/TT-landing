@@ -15,6 +15,12 @@
     src: url('../font/SF Pro Text/SF-Pro-Text-Bold.otf') format("opentype");
 }
 
+@font-face {
+    font-family: 'SF-Pro-Text';
+    font-weight: 800;
+    src: url('../font/SF Pro Text/SF-Pro-Text-Black.otf') format("opentype");
+}
+
 body {
     margin: 0px;
     background-color: black;
@@ -62,7 +68,7 @@ a {
 }
 
 .section-1 .row .col-right {
-    width: 54%;
+    width: 58%;
 }
 
 .section-1 .row {
@@ -93,7 +99,12 @@ a {
 }
 
 .section-2 .col-left {
-    max-width: 562px;
+    max-width: 619px;
+    width: 53%;
+}
+
+.section-2  .col-right {
+    width: 48%;
 }
 
 .section-2 p {
@@ -105,7 +116,7 @@ a {
 }
 
 .section-3 .col-right {
-    max-width: 510px;
+    max-width: 550px;
     margin-left: 90px;
 }
 
@@ -114,7 +125,7 @@ a {
 }
 
 .section-4 .col-top {
-    max-width: 740px;
+    max-width: 787px;
 }
 
 nav {
