@@ -20,6 +20,7 @@ body {
     background-color: black;
     color: white;
     font-family: "SF-Pro-Text";
+    overflow-x: hidden;
 }
 
 a {
@@ -28,7 +29,7 @@ a {
 }
 
 .container {
-    max-width: 1150px;
+    max-width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -56,35 +57,68 @@ a {
     width: 50%;
 }
 
+.section-1 .row .col-left {
+    width: 40%;
+}
+
+.section-1 .row .col-right {
+    width: 54%;
+}
+
+.section-1 .row {
+    justify-content: space-between;
+}
+
+.section-1 .video-wrap {
+    height: 500px;
+    overflow: hidden;
+}
+
+.section-1 .video-wrap video {
+    position: absolute;
+    top: 50%;
+    height: 100%;
+    width: fit-content;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.section-1 .col-left {
+    overflow: hidden;
+}
+
 .section-2 .row {
     justify-content: space-between;
 }
 
 .section-2 .col-left {
-    max-width: 529px;
+    max-width: 562px;
 }
 
 .section-3 .col-right {
-    max-width: 490px;
+    max-width: 510px;
     margin-left: 90px;
 }
 
 .section-4 .col-top {
-    max-width: 677px;
+    max-width: 740px;
 }
 
 nav {
-    position: fixed;
     width: 100%;
     background-color: black;
-    top: 0px;
-    z-index: 1000;
 }
 
 nav .navbar-container {
     display: flex;
     align-items: baseline;
-    padding: 30px;
+    padding: 30px 0px;
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 nav .rightMenu {
@@ -108,6 +142,11 @@ nav .navbar-toggle {
     color: #CEBFBF;
     width: fit-content;
     padding: 12px 26px;
+}
+
+.btn.btn-gray {
+    background-color: #CEBFBF;
+    color: #676060;
 }
 
 .learn-more {
@@ -166,7 +205,7 @@ nav .navbar-toggle {
     top: 50%;
     left: 50%;
     z-index: 100000;
-    width: 87%;
+    width: 88%;
     height: 100%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -192,7 +231,7 @@ nav .navbar-toggle {
     top: 50%;
     left: 50%;
     z-index: 100000;
-    width: 73%;
+    width: 75%;
     height: 100%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -205,12 +244,12 @@ nav .navbar-toggle {
 .circle-3 .circle {
     stroke: #6493F1;
     fill: none;
-    stroke-width: 1.5;
+    stroke-width: 1.4;
     stroke-linecap: round;
 }
 
 .circle-3 .circle-bg {
-    stroke-width: 1.5;
+    stroke-width: 1.4;
 }
 
 .circle-4 {
@@ -218,7 +257,7 @@ nav .navbar-toggle {
     top: 50%;
     left: 50%;
     z-index: 100000;
-    width: 59%;
+    width: 64%;
     height: 100%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -231,12 +270,12 @@ nav .navbar-toggle {
 .circle-4 .circle {
     stroke: #FFD600;
     fill: none;
-    stroke-width: 1.9;
+    stroke-width: 1.6;
     stroke-linecap: round;
 }
 
 .circle-4 .circle-bg {
-    stroke-width: 1.9;
+    stroke-width: 1.6;
 }
 
 .circle-5 {
@@ -244,7 +283,7 @@ nav .navbar-toggle {
     top: 50%;
     left: 50%;
     z-index: 100000;
-    width: 46%;
+    width: 53%;
     height: 100%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -257,12 +296,12 @@ nav .navbar-toggle {
 .circle-5 .circle {
     stroke: #57A146;
     fill: none;
-    stroke-width: 2.4;
+    stroke-width: 1.7;
     stroke-linecap: round;
 }
 
 .circle-5 .circle-bg {
-    stroke-width: 2.4;
+    stroke-width: 1.7;
 }
 
 .circular-chart {
@@ -295,6 +334,8 @@ nav a {
     padding-right: 20px;
     padding: 10px;
     margin-left: 18px;
+    display: flex;
+    align-items: center;
 }
 
 video {
@@ -308,7 +349,7 @@ img {
 h1 {
     font-style: normal;
     font-weight: 860;
-    font-size: 64px;
+    font-size: 68px;
     color: #CEBFBF;
     margin-top: 0px;
     margin-bottom: 50px;
@@ -343,6 +384,7 @@ section {
 
 .section-1 {
     margin: 0px;
+    margin-top: 13vh;
 }
 
 .section-2 {
@@ -385,6 +427,9 @@ section {
     justify-content: space-between;
     gap: 15px;
     margin-bottom: 26px;
+    width: 560px;
+    height: 161px;
+    max-width: 100%;
 }
 
 .card-wrap .card>div {
@@ -394,6 +439,18 @@ section {
     gap: 20px;
 }
 
+.portfolio-image .blank {
+    position: absolute;
+    width: 65%;
+    height: 40%;
+    top: 14%;
+    left: 13%;
+    transform: rotate(345deg);
+    overflow: hidden;
+}
+
+.portfolio-image .screen {
+}
 
 footer {
     margin-top: 50px;
@@ -410,6 +467,7 @@ footer .footer-top a {
     color: #CEBFBF;
     margin-right: 20px;
     display: flex;
+    align-items: center;
     gap: 5px;
 }
 
@@ -433,6 +491,18 @@ footer .footer-bottom p {
     color: #CEBFBF;
 }
 
+@media screen and (min-width: 1700px) {
+    .portfolio-image .blank {
+        position: absolute;
+        width: 65%;
+        height: 40%;
+        top: 14%;
+        left: 10%;
+        transform: rotate(345deg);
+        overflow: hidden;
+    }
+}
+
 @media screen and (max-width: 800px) {
     html {
         overflow-x: hidden;
@@ -441,6 +511,16 @@ footer .footer-bottom p {
     h1 {
         font-size: 50px;
         line-height: 60px;
+    }
+
+    .portfolio-image .blank {
+        position: absolute;
+        width: 65%;
+        height: 39%;
+        top: 15%;
+        left: 14%;
+        transform: rotate(345deg);
+        overflow: hidden;
     }
 
     nav .navbar-container {
@@ -495,6 +575,18 @@ footer .footer-bottom p {
 
     .row {
         flex-direction: column;
+    }
+
+    .section-1 .row .col-left {
+        width: 100%;
+    }
+
+    .section-1 .row .col-right {
+        width: 100%;
+    }
+
+    .section-1 .video-wrap {
+        margin-bottom: 20px;
     }
 
     .section-1 {
