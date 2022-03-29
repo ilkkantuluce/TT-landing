@@ -34,11 +34,9 @@ function inView() {
 
 function animate() {
     if (inView()) {
-        setTimeout(function() {
-            element.classList.add('animate');
-            for (let i = 0; i < nodeList.length; i++) {
-                nodeList[i].style.strokeDasharray = "";
-            }
-        }, 100);
+      element.classList.add('animate');
+      for (let i = 0; i < nodeList.length; i++) {
+          nodeList[i].style.strokeDasharray = "";
+      }
     }
 }
