@@ -71,6 +71,10 @@ a {
     width: 58%;
 }
 
+.section-1 h1 {
+    margin-bottom: 33px;
+}
+
 .section-1 .row {
     justify-content: space-between;
 }
@@ -157,7 +161,7 @@ nav .navbar-toggle {
     background: #676060;
     border-radius: 25px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 590;
     font-size: 18px;
     display: flex;
     gap: 13px;
@@ -394,6 +398,10 @@ nav a {
     margin-left: 27px;
     display: flex;
     align-items: center;
+}
+
+nav .btn {
+    font-weight: 590;
 }
 
 video {
