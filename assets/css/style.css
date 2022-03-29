@@ -432,6 +432,11 @@ h1 span {
     -moz-text-fill-color: transparent;
 }
 
+h1 .linear1 {
+    background-image: linear-gradient(45deg, #E662F1, #F39D6C);
+    
+}
+
 p {
     font-weight: 400;
     font-size: 20px;
@@ -469,9 +474,17 @@ section {
     margin-bottom: 237px;
 }
 
+.section-4 h1 {
+    margin-bottom: 71px;
+}
+
 .section-5 {
     margin-bottom: 243px;
     margin-top: 237px;
+}
+
+.section-5 h1 {
+    margin-bottom: 46px;
 }
 
 .chart {
