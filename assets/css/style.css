@@ -96,9 +96,21 @@ a {
     max-width: 562px;
 }
 
+.section-2 p {
+    max-width: 535px;
+}
+
+.section-2 h1 {
+    margin-bottom: 61px;
+}
+
 .section-3 .col-right {
     max-width: 510px;
     margin-left: 90px;
+}
+
+.section-3 h1 {
+    margin-bottom: 59px;
 }
 
 .section-4 .col-top {
@@ -408,7 +420,11 @@ section {
 }
 
 .chart {
-    margin-top: 38px;
+    margin-top: 92px;
+}
+
+.chart img {
+    width: 100%;
 }
 
 .card-wrap {
@@ -596,6 +612,10 @@ footer .footer-bottom p {
 
     .section-3 .col-right {
         margin-left: 0px;
+    }
+
+    .section-2 p br {
+        display: none;
     }
 
     .portfolio-image {
