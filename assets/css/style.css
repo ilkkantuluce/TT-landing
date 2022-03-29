@@ -329,11 +329,10 @@ nav .logo {
 
 nav a {
     font-size: 15px;
-    line-height: 100%;
     color: rgba(206, 191, 191, 0.5);
     padding-right: 20px;
     padding: 10px;
-    margin-left: 18px;
+    margin-left: 27px;
     display: flex;
     align-items: center;
 }
